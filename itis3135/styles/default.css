@@ -1,0 +1,53 @@
+body
+{
+	font-family: verdana;
+	color:#8F142D;
+	background-color: #f7ddd9;
+	margin-left: 75px;
+	margin-right: 75px;
+	line-height: 120%;
+}
+
+header, footer
+{	
+	color: #8F142D;
+	text-align: center;
+}
+
+h2
+{
+	font-family: Cambria, Cochin, Georgia, serif;
+	color: #8F142D;
+	text-align: center;
+	line-height: 0px;
+}
+
+a
+{
+	text-decoration: none;
+	color: seagreen;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: mediumseagreen;
+}
+
+figure
+{
+	color: seagreen;
+	text-align: center;
+}
+
+figcaption
+{
+	font-style: italic;
+}
+
+nav
+{
+	color: #FF0000;
+	text-align: center;
+}
