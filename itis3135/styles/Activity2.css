@@ -31,13 +31,16 @@ th, td
 {
 	text-align: right;
 }
-
-tbody tr:nth-child(1) th
+tbody tr:nth-of-type(even)
 {
-	background-color: darkgreen;
+	background-color: rgb(197, 194, 194);
+}
+tbody td:nth-child(1){
+	background-color: white;
 }
 
-tbody tr th
+tbody tr:first-child
 {
-	background-color: lightgreen;
+	background-color: rgb(5, 131, 26);
 }
+

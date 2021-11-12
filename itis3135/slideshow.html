@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="styles/slideshow.css" rel="stylesheet" type="text/css" >
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+	<title>John Lee, ITIS3135, SlideShow</title>
+</head>
+
+<body>
+	<header>
+			<h1>John Jonghoon Lee >> ITIS 3135</h1>
+	</header>
+    
+    <hr>
+	
+	<main>
+		<h2>Floors of Library of Ruina</h2>
+        <p>Click on each image to enlarge</p>
+        <ul id="image_slides" class="image_slides">
+            <li><a href="images/LoR/floors/floor_history.png" title="Floor of History"><img src="images/LoR/floors/floor_history.png" alt=""></a></li>
+            <li><a href="images/LoR/floors/floor_tech_science.png" title="Floor of Technological Science"><img src="images/LoR/floors/floor_tech_science.png" alt=""></a></li>
+            <li><a href="images/LoR/floors/floor_literature.png" title="Floor of Literature"><img src="images/LoR/floors/floor_literature.png" alt=""></a></li>
+            <li><a href="images/LoR/floors/floor_art.png" title="Floor of Art"><img src="images/LoR/floors/floor_art.png" alt=""></a></li>
+            <li><a href="images/LoR/floors/floor_natural_science.png" title="Floor of Natural Science"><img src="images/LoR/floors/floor_natural_science.png" alt=""></a></li>
+            <li><a href="images/LoR/floors/floor_language.png" title="Floor of Language"><img src="images/LoR/floors/floor_language.png" alt=""></a></li>
+            <li><a href="images/LoR/floors/floor_social_science.jpg" title="Floor of Social Science"><img src="images/LoR/floors/floor_social_science.jpg" alt=""></a></li>
+            <li><a href="images/LoR/floors/floor_philosophy.png" title="Floor of Philosophy"><img src="images/LoR/floors/floor_philosophy.png" alt=""></a></li>
+            <li><a href="images/LoR/floors/floor_religion.png" title="Floor of Religion"><img src="images/LoR/floors/floor_religion.png" alt></a></li>
+        </ul>
+        <h2 id="caption">Library of Ruina Floors</h2>
+        <p><img id="main_image" class="main_image" src="images/LoR/backgrounds/background_main.jpg" alt></p>
+
+        <script>
+            $(document).ready(function(){
+                //preload images
+                $("#image_slides a").each(function(){
+                    var swappedImage = new Image();
+                    swappedImage.src = $(this).attr("href")
+                });
+
+                //set up event handlers for links
+                $("#image_slides a").click(function(evt){
+                    //swap image
+                    var imageURL = $(this).attr("href");
+                    $("#main_image").attr("src",imageURL);
+
+                    //swap caption
+                    var caption = $(this).attr("title");
+                    $("#caption").text(caption);
+
+                    //cancel the default action of the link
+                    evt.preventDefault();
+                });
+
+                //move focus to first thumbnail
+                $("li:first-child a").focus();
+            });
+        </script>
+	</main>
+	
+	<footer>
+		<br/>
+		<nav>
+			<a href="http://webpages.uncc.edu/jlee322/" target="_blank">Charlotte.edu</a> &#9553;
+			<a href="https://github.com/asnow3023" target="_blank">Github</a> &#9553;
+			<a href="https://asnow3023.github.io" target="_blank">Github.io</a> &#9553;
+			<a href="https://asnow3023.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a>
+			<br>
+			<a href="https://www.freecodecamp.org/jlee322" target="_blank">freeCodeCamp</a> &#9553;
+			<a href="brand-joyous-lemur.html">Joyous Lemur Design Co. 2021</a> &#9553;
+			<a href="index.html">Index</a>
+		</nav>
+		<br />
+		<p>
+            The work submitted here is done by John Lee, and copyright belongs to John Lee sole entity at all times.
+			<br>
+			The work took the reference of Murach's Chapter 8 slides on Canvas for implementation.
+            <br><br>
+            Signed,
+            John Lee, 10/22/2021 2:34am
+		</p>
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fjlee322%2Fitis3135%2Fslideshow.html">
+			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fjlee322%2Fitis3135%2Fslideshow.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+		</a>
+	
+	</footer>
+
+</body>
+
+</html>

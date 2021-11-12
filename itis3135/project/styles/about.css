@@ -1,0 +1,89 @@
+body{
+    background-color:black;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+.a:link, a:visited{
+    color:whitesmoke;
+}
+.topnav{
+    z-index: 2;
+    background-color: #333;
+    padding: 10px;
+    position:fixed;
+    max-height: 5%;
+    width: 98%;
+}
+.topnav a{
+    color:whitesmoke;
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    font-size: 1.5vw;
+    font-weight:600;
+    display:inline-table;
+    width:16%;
+    text-decoration: none;
+    text-align: center;
+    font-size-adjust: auto;
+}
+.topnav a:hover{
+    background-color: whitesmoke;
+    color: #333;
+}
+/*include js to change "active" class upon click*/
+.topnav a.active{
+    background-color: whitesmoke;
+    color: #333;
+    box-shadow: 8px 2px 3px rgb(218, 165, 32);
+}
+.blackbox{
+    z-index: -1;
+    background-color:black;
+    opacity:.9;
+    margin:auto;
+    width:98%;
+    padding: 15px;
+
+}
+.main-head{
+    z-index: 1;
+    background:rgba(211,211,211,.85);
+}
+.main-head p{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px black;
+    color:rgb(241, 214, 143);
+    font-size:60px;
+}
+.main-page{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center;
+}
+.introduction{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 2px 2px 8px black;
+    color:rgb(241, 214, 143);
+
+}
+.credits{
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    color: whitesmoke;
+}
+
+footer{
+    width:100%;
+    bottom: 0;
+    left:0;
+    height: 100;
+    position:fixed;
+    background-color:#000000;
+    color:rgb(241, 214, 143);
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    text-align:center;
+}

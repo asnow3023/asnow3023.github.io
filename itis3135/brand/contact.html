@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script src="scripts/brand-joyous-lemur.js"></script>
+	<div w3-include-html="component/head.html"></div>
+	<script>
+		w3.includeHTML();
+	</script>
+</head>
+
+<body>
+	<header>
+		<div w3-include-html="component/header.html"></div>
+	</header>
+
+	<script>
+		w3.includeHTML();
+	</script>
+
+	<main>
+		<h2>Contact Us</h2>
+		<p>Enter your contact information and contents in provided area below.<br>We will get back to you as soon as
+			possible!</p>
+		<div class="container">
+			<form onsubmit="displayContent()">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="First Name">
+				<br>
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Last Name">
+				<br>
+				<label for="email">Email</label>
+				<input type="text" id="email" name="useremail" placeholder="Email Address">
+				<br>
+				<label for="content">Message</label>
+				<textarea id=content name="message" placeholder="Write your message here..."></textarea>
+				<br>
+				<button type="button" class="submit" id="submit" onclick="displayContent()">Submit</button>
+			</form>
+		</div>
+		<br><br>
+		</div>
+	</main>
+
+	<footer>
+		<div w3-include-html="component/footer.html"></div>
+		<script>
+			w3.includeHTML();
+		</script>
+	</footer>
+
+</body>
+
+</html>

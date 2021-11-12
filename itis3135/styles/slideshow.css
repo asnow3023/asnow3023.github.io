@@ -1,0 +1,37 @@
+/*integrated default settings from default.css*/
+body{
+    font-family: verdana;
+    color:#8F142D;
+    background-color: #f7ddd9;
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+    line-height: 120%;
+}
+header, footer{	
+    color: #8F142D;
+    text-align: center;
+}
+h2{
+    color: #2c78aa;
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+
+.image_slides li{
+    display:inline;
+}
+.image_slides img{
+    display: inline;
+    max-width: 100px;
+    width:auto;
+    height:auto;
+}
+.main_image{
+    display:inline;
+    max-width:500px;
+    width: auto;
+    height: auto;
+}
