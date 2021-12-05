@@ -81,7 +81,7 @@ body{
     font-size: 30px;
 }
 .slideshow{
-    display:block;
+    display:inline-block;
     text-align: center;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;

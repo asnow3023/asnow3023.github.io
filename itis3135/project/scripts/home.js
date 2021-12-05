@@ -7,7 +7,6 @@ $(document).ready(function() {
         slideWidth: 1000,
         slideMargin: 20,
         randomStart: true,
-        captions: true,
         autoDelay: 3000,
     });
 });
