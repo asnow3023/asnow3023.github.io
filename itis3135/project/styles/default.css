@@ -80,11 +80,9 @@ body{
     color: whitesmoke;
     font-size: 30px;
 }
-.slideshow{
-    display:inline-block;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
+.slideshow img{
+    display:block;
+    margin: 0 auto;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none; 
