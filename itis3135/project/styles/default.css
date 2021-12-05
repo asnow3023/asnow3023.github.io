@@ -82,6 +82,8 @@ body{
 }
 .slideshow{
     display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
     text-align: center;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
