@@ -9,8 +9,5 @@ $(document).ready(function() {
         randomStart: true,
         captions: true,
         autoDelay: 3000,
-        pager:true,
-        pagerType: 'short',
-        pagerCustom: $('#id_pager')
     });
 });
