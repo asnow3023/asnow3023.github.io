@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $("#slider").bxSlider({
         autoStart: true,
         auto: true,
@@ -7,6 +7,10 @@ $(document).ready(function(){
         slideWidth: 500,
         slideMargin: 20,
         randomStart: true,
-        autoDelay: 2000,
+        captions: true,
+        autoDelay: 3000,
+        pager:true,
+        pagerType: 'short',
+        pagerCustom: $('#id_pager')
     });
 });
