@@ -52,7 +52,7 @@ body{
     width:100%;
     height:auto;
     text-align: center;
-    display:inline-block;
+    display:block;
 }
 .main-head{
     background:rgba(211,211,211,0.5);
