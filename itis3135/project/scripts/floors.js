@@ -15,11 +15,22 @@ $(document).ready(function(){
         var caption = $(this).attr("title");
         $("#caption").text(caption);
 
+        //swaps URL information for each floor
+        var link = $(this).find("img").attr("longdesc");
+        $("#main_image").attr("longdesc",link);
+
         //cancel the default action of the link
         evt.preventDefault();
     });
 
     //move focus to first thumbnail
     $("li:first-child a").focus();
+
+    $("#main_image").click(function(evt){
+        window.location.href = $(this).attr("longdesc")+".html";
+
+            //cancel the default action of the link
+            evt.preventDefault();
+    });
 
 });

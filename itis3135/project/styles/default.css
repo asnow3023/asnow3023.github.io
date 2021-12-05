@@ -1,0 +1,199 @@
+body{
+    background-color:black;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    text-align: center;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+.a:link, a:visited{
+    color:whitesmoke;
+}
+.topnav{
+    z-index: 2;
+    background-color: #333;
+    padding: 10px;
+    position:fixed;
+    max-height: 5%;
+    width: 98%;
+}
+.topnav a{
+    color:whitesmoke;
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    font-size: 1.5vw;
+    font-weight:600;
+    display:inline-table;
+    width:16%;
+    text-decoration: none;
+    text-align: center;
+    font-size-adjust: auto;
+}
+.topnav a:hover{
+    background-color: whitesmoke;
+    color: #333;
+}
+/*include js to change "active" class upon click*/
+.topnav a.active{
+    background-color: whitesmoke;
+    color: #333;
+    box-shadow: 8px 2px 3px rgb(218, 165, 32);
+}
+.blackbox{
+    z-index: -1;
+    background-color:black;
+    opacity:0.8;
+    margin:auto;
+    width:97%;
+    padding: 15px;
+
+}
+.main-head{
+    background:rgba(211,211,211,0.5);
+}
+.main-head p{
+    opacity:1.0;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px black;
+    color:rgb(241, 214, 143);
+    font-size:60px;
+}
+.introduction p{
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.outro{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+/*for contact.html*/
+.main-page{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center;
+}
+.introduction{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    color: whitesmoke;
+}
+.container{
+    z-index: 1;
+    opacity:100%;
+    padding: 12px ;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: blanchedalmond;
+    max-width:500px;
+}
+input[type=text], textarea{
+    width: 98%;
+}
+textarea{
+    height: 150px;
+}
+label{
+    font-weight: bold;
+}
+.submit{
+    width: 100%;
+    height: 30px;
+    background-color:lightgrey;
+    color:beige;
+    text-shadow: 2px 2px 8px black;
+    font-size:20px;
+}
+hr{
+    width: 60%;
+}
+.ad{
+    color: cornflowerblue;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px red;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*for about.html*/
+.credits{
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    color: whitesmoke;
+}
+
+/*For floors.html*/
+
+.floor-image li{
+    display: inline;
+}
+.floor-image img{
+    display: inline;
+    max-width: 150px;
+    width:auto;
+    height:auto;
+}
+.main_image{
+    display:inline;
+    max-width:200px;
+    width: auto;
+    height: auto;
+}
+.caption{
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    color:rgb(182, 60, 145);
+    position:absolute;
+    margin:0 auto;
+    left:0;
+    right:0;
+    text-align: center;
+    top:60%;
+    width:60%;
+    font-size: 30px;
+}
+/*for story.html*/
+.content{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 2px 2px 8px black;
+    color:rgb(241, 214, 143);
+
+}
+.content p{
+    margin-left:100px;
+    margin-right: 100px;
+}
+figcaption{
+    text-shadow: 1px 1px 6px rgb(218, 165, 32);
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+footer{
+    width:100%;
+    bottom: 0;
+    left:0;
+    height: 100;
+    position:fixed;
+    background-color:#000000;
+    color:rgb(241, 214, 143);
+    text-shadow: 2px 2px 8px rgb(218, 165, 32);
+    text-align:center;
+}
