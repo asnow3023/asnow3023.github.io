@@ -46,6 +46,10 @@ body{
     padding: 15px;
 
 }
+.main-page{
+    width:100%;
+    height:auto;
+}
 .main-head{
     background:rgba(211,211,211,0.5);
 }
