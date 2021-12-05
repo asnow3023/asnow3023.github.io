@@ -47,8 +47,9 @@ body{
 
 }
 .main-page{
-    width:100%;
+    max-width:100%;
     height:auto;
+    object-fit: contain;
 }
 .main-head{
     background:rgba(211,211,211,0.5);
