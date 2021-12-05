@@ -80,6 +80,13 @@ body{
     color: whitesmoke;
     font-size: 30px;
 }
+.slideshow{
+    display:block;
+    text-align: center;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+}
 
 /*for contact.html*/
 .main-page{
