@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="styles/home.css" rel="stylesheet" type="text/css">
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="scripts/topnav.js"></script>
-    <title>John Lee, ITIS3135, Home Page</title>
+    <title>John Lee, ITIS3135, Floor of General Works</title>
+    <script src="scripts/dialoguefetch.js"></script>
 </head>
 
 <body>
@@ -16,10 +18,10 @@
     </style>
     <header>
         <nav>
-            <div class="topnav">
-                <a class="active" href="home.html">Home</a>
+            <div class="topnav" id ="navMenu">
+                <a href="index.html">Home</a>
                 <a href="story.html">Story</a>
-                <a href="floors.html">Floors</a>
+                <a class="active" href="floors.html">Floors</a>
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="https://projectmoon.studio/eng/main/">Project Moon Official</a>
@@ -30,8 +32,9 @@
     <main>
         <div class="row">
             <div class="character">
-                <img src="images/LoR/characters/roland_model.png" alt="Roland">
+                <img src="images/LoR/characters/roland_model.png" style="position: fixed; right:0; bottom:0; margin-bottom: 100px; height:750px;;" alt="Roland">
             </div>
+            <div class="dialogue-box" id="dialogue"></div>
         </div>
     </main>
 </body>

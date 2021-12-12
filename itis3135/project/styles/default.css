@@ -83,9 +83,13 @@ body{
 .slideshow{
     margin: 0;
     padding: 0;
+    position: relative;
 }
 .slideshow ul{
     position: relative;
+}
+.bx-wrapper{
+    margin:auto;
 }
 
 
@@ -210,4 +214,32 @@ footer{
     color:rgb(241, 214, 143);
     text-shadow: 2px 2px 8px rgb(218, 165, 32);
     text-align:center;
+}
+
+/*floors*/
+.dialogue-box{
+    z-index: -1;
+    background-color:black;
+    position:fixed;
+    opacity:0.8;
+    bottom:0;
+    margin-bottom: 100px;
+    width:97%;
+    padding: 10px;
+}
+.dialogue-box h3{
+    text-align: left;
+    font-weight: bold;
+    font-size: 37.5px;
+    text-shadow: 2px 2px 8px black;
+    color:whitesmoke;
+    padding-left: 20px;
+    margin:0;
+}
+.dialogue-box p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 2px 2px 8px black;
+    color:rgb(241, 214, 143);
 }
